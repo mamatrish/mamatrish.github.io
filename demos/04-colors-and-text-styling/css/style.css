@@ -1,0 +1,45 @@
+#first-paragraph {
+    color: purple;
+    background-color: pink;
+    font-style: italic;
+    text-align: center;
+}
+
+#second-paragraph {
+    color: rgb(221, 72, 97);
+    background-color: yellow; 
+    font-size: 40px;
+}
+
+#bold-paragraph {
+    font-weight: bold;
+    background-color: greenyellow;
+    text-decoration: underline;
+    font-family: fantasy;
+
+
+}
+
+#span1 {
+    color:blueviolet;
+    font-weight: bold;
+    font-size: 48px;
+}
+
+#span2 {
+    color:darkred;
+    font-weight:bolder;
+    font-style:italic;
+    text-decoration:line-through;
+}
+
+#span3 {
+    color:aquamarine;
+    background-color:burlywood;
+
+}
+
+#span4 {
+    text-align:right;
+    
+}
