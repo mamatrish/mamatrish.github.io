@@ -1,0 +1,14 @@
+div {
+    border: 12px solid aquamarine;
+    margin: 24px 0px;
+    padding: 24px 36px;
+    background-color:lightcoral
+}
+
+p {
+    border: 20px dotted purple;
+    margin: 70px;
+    padding: 55px 70px;
+    background-color:bisque;
+    border-radius: 50%;
+}
