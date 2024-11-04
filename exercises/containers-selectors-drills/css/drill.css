@@ -11,7 +11,7 @@ div.purple p {
 
 
 /* Drill 3 - Write your code solution below */
-div.dashed span p {
+div.dashed p span {
     color:magenta;
 }
 
