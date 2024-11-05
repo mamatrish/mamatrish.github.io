@@ -1,0 +1,51 @@
+img {
+    width: 100px;
+    margin-top: 60px;
+}
+
+.display-space {
+    margin-top: 20px;
+    margin-bottom: 20px;;
+}
+
+#first-poster {
+    rotate: 355deg;
+    display: block;
+    border: 20px solid black;
+    padding: 10px;
+    background-color:white;
+}
+
+.second-poster {
+    background-color:black;
+    margin: 30px;
+    padding: 10px;
+}
+
+#second-poster-frame{
+    border: 2px solid black;
+    background-color:violet;
+    height: 180px;
+    padding: 5px;
+}
+
+.second-poster #second-poster-frame {
+    margin: 1px;
+    text-align: center;
+    font-size: 10px;
+    display:block;
+}
+
+#poster-title {
+   font-size: 20px;
+}
+
+
+
+#third-poster {
+    border: 20px solid black;
+    padding: 10px;
+    background-color: white;
+    rotate: 5deg;
+}
+
