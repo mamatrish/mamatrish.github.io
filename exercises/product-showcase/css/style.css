@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.single-column {
+    min-width: 300px;
+    margin-left: auto;
+    margin-right:auto;
+    padding: 20px;
+}
+
+h1 {
+    color:rgb(100, 22, 173);
+    text-align: center;
+}
+
+h3 {
+    color:rgb(100, 22, 173);
+    text-align: center;
+    margin-top: 100px;
+}
+
+.light-container {
+    padding: 20px 0px;
+    
+}
+
+.dark-container {
+    background-color: rgb(191, 167, 46);
+    color: white;
+    padding: 48px 0px;
+}
+
+.side_by_side {
+    display:inline-block;
+}
+
+#oregon_chai_1 {
+    width: 30%;
+    height: 100%;
+    vertical-align: top;
+    margin-top: 50px;
+}
+#content {
+    width: 50%;
+    margin:50px;
+}
+
+p {
+    margin-top: 50px;
+}
+
+.bottom_images {
+    width:600px;
+    padding-right: 3000px;;
+}
