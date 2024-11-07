@@ -10,33 +10,36 @@ body {
 #two-columns {
     display: flex;
 }
-/*
-    First, let's return the sidebar to the left side
-    by removing the order property from both 
-    Flexbox Items.  
-    
-    Let's also strip the background color from the 
-    main content column, and then change the sidebar
-    background color to something else (students can
-    pick their own colors).
-
-    Then, we'll add some padding, increase the width
-    a bit, and add a border-right to the sidebar 
-    (again, colors can be whatever students want).
-
-*/    
 
 #sidebar-content {
-    background-color: #cfe2d8 rgb(223, 30, 237);
+    background-color: rgb(223, 30, 237);
     width: 200px; /*increased to 250px*/
     padding:24px;/*new*/
     border-right:2px solid #72a586;/*new*/
 }
 
+#sidebar-content h2 {
+    border-bottom: 2px solid #72a586;
+    padding-bottom: 8px;
+}
+
 #main-content {
-    background-color: lightgreen;
     flex: 1;
-    order: 1; 
+    padding: 48px;
 } 
+
+#sidebar-content ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+#sidebar-content ul a {
+    color: #111111;
+    text-decoration: none;
+}
+
+#sidebar-content ul li {
+    padding: 4px 0px;
+}
         
     
