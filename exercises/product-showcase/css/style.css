@@ -26,8 +26,7 @@ h3 {
 }
 
 .light-container {
-    padding: 20px 0px;
-    
+    padding: 20px 0px;   
 }
 
 .dark-container {
@@ -56,6 +55,9 @@ p {
 }
 
 .bottom_images {
-    width:600px;
-    padding-right: 3000px;;
+    text-align: center;
+}
+
+.bottom_images img {
+    width: 50%;
 }
