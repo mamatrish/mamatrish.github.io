@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+}
+    
+body {
+    margin: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+} 
+
+#layout {
+    display:grid;
+    grid-template-columns: 120px 1fr 1fr;
+}
+
+#column-1 {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#column-2 {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#column-2 p {
+    text-decoration: underline;
+    color:blue
+}
+
+#column-3 p {
+    text-decoration: underline;
+    margin: 20px;
+    display:flex;
+    
+}
+
+#bottom-half p {
+    text-decoration: none;
+    background-color: bisque;
+}
+
+#bottom-half2 p {
+    text-decoration: none;
+}
+
+.fake-button {
+    background-color: #0053a0;
+    padding: 12px;
+    border-radius: 24px;
+    text-align: center;
+    color: white;
+    margin: 12px;
+    display: inline-block;
+    min-width: 200px;
+}
+
+.fake-button2 {
+    background-color: gray;
+    padding: 12px;
+    border-radius: 24px;
+    text-align: center;
+    color: white;
+    margin: 12px;
+    display: inline-block;
+    min-width: 200px;
+    border: 2px solid black;
+}
+
+#column-1 img{
+    width: 75%;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin: 10px;
+    
+}
+
+#column-2 img {
+    width: 90%;
+    border: 2px solid black;
+}
+
+.cta-buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
