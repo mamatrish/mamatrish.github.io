@@ -42,6 +42,10 @@ body {
 #bottom-half p {
     text-decoration: none;
     background-color: bisque;
+    width: fit-content;
+    padding: 0px 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 #bottom-half2 p {
