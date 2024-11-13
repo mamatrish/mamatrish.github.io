@@ -57,9 +57,22 @@ body {
     margin: 12px;
     display: inline-block;
     min-width: 200px;
+    border: 2px solid black;
 }
 
 .fake-button2 {
+    background-color:lightblue;
+    padding: 12px;
+    border-radius: 24px;
+    text-align: center;
+    color:black;
+    margin: 12px;
+    display: inline-block;
+    min-width: 200px;
+    border: 2px solid black;
+}
+
+.fake-button3 {
     background-color: gray;
     padding: 12px;
     border-radius: 24px;
