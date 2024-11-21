@@ -75,16 +75,21 @@ body {
 }
 #side-by-side-layout {
     display: flex;
-    margin-bottom: 100px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 #side-by-side-layout .card {
     border: 2px solid black;
-    border-radius: 15px;;
-    width: 25%;
-    min-width: 200px;
+    border-radius: 15px;
+    width: 33%;
+    max-width: 250px;
     padding: 10px;
-    margin: 50px;
+    margin: 10px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     
     background: linear-gradient(
         -50deg,
@@ -96,12 +101,13 @@ body {
 }
 
 #side-by-side-layout .card h2 {
-    font-size: 25px;
+    font-size: 30px;
     margin: 12px 0px;
+    padding: 20px;
 }
 
 #side-by-side-layout .card p {
-    font-size: 18px
+    font-size: 18px;
 }
 
 #side-by-side-layout .card img {
@@ -146,8 +152,8 @@ body {
 
 .buttonBackTo {
     text-decoration: none;
-    color: black;
-    border: 1px solid black;
+    color: white;
+    border: 2px solid white;
     background-color: #CEAAAA;
     border-radius: 20px;
     padding: 10px;
@@ -156,4 +162,8 @@ body {
 
     background-color: #333333;
     color: white;
+}
+
+.heading {
+    color:white;
 }
