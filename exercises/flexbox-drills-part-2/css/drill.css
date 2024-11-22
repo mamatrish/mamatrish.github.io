@@ -21,6 +21,9 @@
 }
 
 /* Drill 9 - Write your code solution below */
+#container-9 {
+    display: flex;
+}
 #container-9 #c9-box2 {
     flex: 1;
 }
