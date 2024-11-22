@@ -62,7 +62,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 24px;
-    border: 10px solid #333333;
+    border: 10px solid white;
     gap: 24px;
 }
     
@@ -80,10 +80,10 @@ body {
     justify-content: center;
 }
 #side-by-side-layout .card {
-    border: 2px solid black;
+    border: 2px solid white;
     border-radius: 15px;
     width: 33%;
-    max-width: 250px;
+    max-width: 300px;
     padding: 10px;
     margin: 10px;
     text-align: center;
@@ -138,13 +138,13 @@ body {
 
 .vertical-gallery { 
     columns: 3 auto;
-    padding: 24px;
-    border: 10px solid #333333;
+    padding: 60px;
+    border: 10px solid white;
 }
 .vertical-gallery img {
     width: 100%;
-    border: 1px solid #333333;
-    margin: 10px;
+    border: 3px solid white;
+    margin: 10px 0px;
 }
 .buttonDiv{
     margin-top: 40px;
