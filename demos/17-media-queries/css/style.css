@@ -10,7 +10,7 @@ body {
 #nav {
     background-color: #222222;
     display: flex;
-    ustify-content: center;
+    justify-content: center;
 }
     
 #nav a {
