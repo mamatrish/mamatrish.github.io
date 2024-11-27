@@ -124,6 +124,7 @@ body {
     visibility: hidden;
     transform: translateY(-8px);
     transition: opacity 0.5s,visibility 0.5s,transform 0.5s;
+    width: 90%;
 }
     
 #card3-1:hover .card-content, 
@@ -133,7 +134,31 @@ body {
     opacity: 1;
     visibility: visible;
     transform: translateY(0px);
-    background-color: white;
     z-index: 3;
-    
+}
+
+#card3-1 {
+    background-color: rgb(250, 4, 4);
+} 
+#card3-2 {
+    background-color: rgb(242, 5, 183);
+} 
+#card3-3 {
+    background-color: rgb(29, 1, 242);
+} 
+#card3-4 {
+    background-color: rgb(243, 135, 11);    
+}
+
+#card3-1 .card-content {
+    background-color: rgb(47, 123, 245);
+} 
+#card3-2 .card-content {
+    background-color: rgb(213, 48, 242);
+} 
+#card3-3 .card-content {
+    background-color: rgb(57, 244, 104);
+} 
+#card3-4 .card-content {
+    background-color: rgb(246, 233, 50);    
 }
