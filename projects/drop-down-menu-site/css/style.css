@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+}
+    
+body {
+    margin: 0px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: #81B29A;
+}
+
+/**************************************************************
+    Navigation Bar
+**************************************************************/
+
+.navbar {
+    background: linear-gradient(to bottom, #692513, #E07A5F);
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+} 
+
+.navbar a:hover {
+    background-color: #F2CC8F;
+    color: black;
+}
+
+.navbar .logo {
+    width: 170px;
+    padding: 0px;
+}
+
+.navbar .logo img {
+    width: 170px;
+}
+
+.navbar .logo:hover {
+    background-color: transparent;
+}
+
+.navbar .nav-links {
+    display: flex;
+}
+
+.menu-dropdown {
+    position: relative;
+}
+
+.menu-dropdown:hover {
+    cursor: pointer;
+}
+
+.menu-dropdown .menu-dropdown-content {
+    position: absolute;
+    background-color: #F2CC8F;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    box-shadow: 4px 4px 4px #00000033;
+    left: 0px;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity 0.5s,transform 0.5s;
+}
+
+.menu-dropdown .menu-dropdown-content a {
+    color: black ;
+    padding: 10px 20px;
+}
+
+.menu-dropdown .menu-dropdown-content a:hover {
+    background-color: #F4F1DE ;
+}
+    
+.menu-dropdown:hover .menu-dropdown-content {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
+
+/**************************************************************
+    Page Content
+**************************************************************/
+
+#hero-1 {
+    background-image: url("../images/cute-dogs.jpg");
+    height: 80vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.about-me {
+    padding: 48px 0px;
+    text-align: left;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-me #home-page-about-me {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.about-me h1{
+    text-align: center;
+}
+
+.single-dog {
+    width: 50%;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: #f4f1dea3;
+    padding: 15px;
+}
+
+.single-dog .dog-pics img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+/**************************************************************
+    Media Query
+**************************************************************/
+
+@media screen and (max-width: 480px) {
+    #hero-1 {
+        height: 30vh;
+    }
+    .about-me {
+        padding: 10px;
+    }
+    .single-dog {
+        width: 100%;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 600px) {
+    #hero-1 {
+        height: 40vh;
+    }
+    .about-me {
+        padding: 10px;
+    }
+    .single-dog {
+        width: 100%;
+    }
+    
+}
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+    #hero-1 {
+        height: 50vh;
+    }
+    .single-dog {
+        width: 80%;
+    }
+}
