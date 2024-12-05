@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    padding: 0px;
 }
     
 body {
@@ -17,10 +18,11 @@ body {
 
 .navbar {
     background: linear-gradient(to bottom, #43a516, #162e02);
-    padding: 10px 15px;
+    padding: 0px 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 80px;
 }
 
 .navbar a {
@@ -28,27 +30,37 @@ body {
     text-decoration: none;
     color: white;
     padding: 10px 15px;
+    height: 100%;
+    padding-top: 25px;
+    border: 1px solid transparent;
 } 
 
 .navbar a:hover {
+    box-sizing: border-box;
     background-color: #6b4c16;
     color: rgb(247, 246, 246);
+    border: 1px solid #513805;
+    border-radius: 0px;
 }
 
-.navbar .logo {
+.navbar a.logo {
     width: 140px;
     padding: 0px;
+    padding-top: 10px;
 }
 
-.navbar .logo img {
+.navbar a.logo img {
     width: 100px;
 }
 
 .navbar .logo:hover {
     background-color: transparent;
+    border: 1px solid transparent;
 }
 
-
+.nav-links {
+    height: 100%;
+}
 
 /**************************************************************
     Page Content
@@ -57,11 +69,13 @@ body {
 #hero-1 {
     background-image: url("../images/veggies-hummus.jpg");
     height: 80vh;
-    background-size:contain;
+    width: 100vw;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     display: flex;
-    justify-content:center;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     text-align: center;
 }
@@ -85,7 +99,7 @@ body {
 
 #hero-1 a {
     background-color: #624406;
-    color:white;
+    color: white;
     text-decoration: none;
     display:inline-block;
     padding: 24px;
@@ -95,7 +109,7 @@ body {
 }
 
 .about-me {
-    padding: 48px 0px;
+    padding: 48px;
     text-align: left;
     padding: 20px;
     display: flex;
@@ -106,11 +120,27 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+.about-me #about-me-text{
+    padding: 48px;
+    text-align: left;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.about-me img{
+    height: 50vh;
+}
 
-.about-me #home-page-about-me {
+.about-me p {
     display: flex;
     flex-direction: column;
     width: 70%;
+    text-align: justify;
 }
 
 .about-me h1{
@@ -127,38 +157,186 @@ body {
 
 #cards-container {
     display: flex;
+    width: 100%;
     flex-wrap: wrap;
     align-items: flex-start;
 }
-    
-    
+
 .card {
-    flex: 300px;
-    border: 3px solid black;
-    margin: 24px;
-    padding: 24px;
+    display: flex;
+    padding: 32px;
     background-color: #43a516;
-    border-radius:1px solid white;
     text-align: center;
+    width: 100%;
+}
+
+.card .card-img {
+    width: 50%;
+    height: 50%;
+    margin-right: 30px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .card-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.card .card-content {
+    width: 50%;
+    text-align: justify;
+    padding-right: 30px;
 }
     
-    
 .card a {
-    text-decoration:none;
+    text-decoration: none;
     color: black;
     display: block;
     border: 3px solid black;
     padding: 12px;
     margin-top: 36px;
+    text-align: center;
+}
+
+.card a:hover {
+    box-shadow: 6px 6px 6px  #0909096c;
+    background-color: #090909;
+    color: white;
 }
 
 #card2 {
-    width: 50vh;
-    background-color: #020302;
-    
+    background-color: #090909;
+}
+
+#card2 a {
+    color: #43a516;
+    border: 3px solid #43a516;
+    width: 130px;
+}
+
+#card2 .card-content a:hover {
+    box-shadow: 6px 6px 6px  #43a5162e;
+    background-color: #43a516;
+    color: white;
+}
+
+#card2 .card-content {
+    padding-left: 30px;
+    padding-right: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
     
-    
+/**************************************************************
+    Footer
+**************************************************************/
+
+footer {
+    height: 15vh;
+    width: 100%;
+    background-color: #162e02;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    box-shadow: 0px -5px 7px 2px #162e02;
+}
+
+footer div.footerColumn {
+    text-align: center;
+    padding: 10px;
+}
+
+footer div.footerColumn { 
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/**************************************************************
+    Menu Page
+**************************************************************/
+
+.featured-item {
+    padding: 48px;
+    text-align: left;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.featured-item #featured-item-text{
+    padding: 48px;
+    text-align: left;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.featured-item img{
+    height: 50vh;
+}
+
+.featured-item h3 {
+    color:#43a516
+}
+
+.menu {
+    padding: 48px;
+    text-align: left;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu #menu-text{
+    padding: 48px;
+    text-align: left;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu img{
+    height: 50vh;
+}
+
+.menu h1 {
+    color: #43a516;
+}
+
+#card4 {
+    background-color: #090909;
+}
+
+#card4 .card-content {
+    padding-left: 30px;
+    padding-right: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 
 /**************************************************************
