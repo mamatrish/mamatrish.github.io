@@ -76,15 +76,19 @@ body {
     margin-top: 20px;
 }
 #button_box button {
-    
+    background-color: blue;
+    color: white;
+    border-radius: 24px;
+    padding: 10px;
 }
 
 #button_box button:hover {
     background-color: orange;
+    color:black
 }
 
 #button_box button:active {
-    background-color: rgb(0, 47, 255);
+    background-color: rgb(244, 246, 248);
 }
 
 
